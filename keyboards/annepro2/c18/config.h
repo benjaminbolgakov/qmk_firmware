@@ -25,6 +25,12 @@
 #define LINE_BT_UART_TX A4  // Master TX, BLE RX
 #define LINE_BT_UART_RX A5  // Master RX, BLE TX
 
+// Possible solution to misinterpretation of keypresses
+#define DEBOUNCE 10
+//#define TAPPING_TERM 200
+//#define PERMISSIVE_HOLD
+//#define IGNORE_MOD_TAP_INTERRUPT
+
 // Obins stock firmware has something similar to this already enabled, but disabled by default in QMK
 #define PERMISSIVE_HOLD
 

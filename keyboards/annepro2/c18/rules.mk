@@ -13,6 +13,11 @@ BOARD = ANNEPRO2_C18
 BOOTLOADER = custom
 PROGRAM_CMD = annepro2_tools --boot $(BUILD_DIR)/$(TARGET).bin
 
+# Debounce algorithms: Possible solution to misinterpretation of keypresses
+DEBOUNCE_TYPE = sym_defer_pk
+#DEBOUNCE_TYPE = eager_pk
+#DEBOUNCE_TYPE = sym_eager_pk
+
 # Anne Pro 2
 SRC = \
 	annepro2_ble.c \
